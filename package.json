@@ -1,0 +1,30 @@
+{
+  "name": "@ammmze/truenas-openapi",
+  "version": "1.0.0",
+  "description": "Collection of TrueNAS OpenAPI docs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "clean": "./clean.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ammmze/truenas-openapi.git"
+  },
+  "keywords": [
+    "truenas",
+    "openapi"
+  ],
+  "author": "Branden Cash <203336+ammmze@users.noreply.github.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ammmze/truenas-openapi/issues"
+  },
+  "homepage": "https://github.com/ammmze/truenas-openapi#readme",
+  "dependencies": {
+    "zx": "^7.0.8"
+  }
+}
