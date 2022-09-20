@@ -21223,10 +21223,6 @@ components:
                   default: false
               additionalProperties: false
               title: idmap_rid_options
-            - type: object
-              properties: {}
-              additionalProperties: false
-              title: idmap_tdb_options
           nullable: false
           description: "`options` are additional parameters that are backend-dependent:"
       additionalProperties: false
@@ -23591,12 +23587,9 @@ components:
             - STANDARD
             - ALWAYS
             - DISABLED
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         compression:
           title: compression
           enum:
@@ -23649,34 +23642,25 @@ components:
             - ZSTD-FAST-100
             - ZSTD-FAST-500
             - ZSTD-FAST-1000
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         atime:
           title: atime
           enum:
             - ON
             - OFF
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         exec:
           title: exec
           enum:
             - ON
             - OFF
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         managedby:
           title: managedby
           nullable: false
@@ -23752,24 +23736,18 @@ components:
           enum:
             - VISIBLE
             - HIDDEN
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         deduplication:
           title: deduplication
           enum:
             - ON
             - VERIFY
             - OFF
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         checksum:
           title: checksum
           enum:
@@ -23781,23 +23759,17 @@ components:
             - SHA512
             - SKEIN
             - EDONR
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         readonly:
           title: readonly
           enum:
             - ON
             - OFF
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         recordsize:
           title: recordsize
           nullable: false
@@ -23812,24 +23784,18 @@ components:
             - SENSITIVE
             - INSENSITIVE
             - MIXED
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         aclmode:
           title: aclmode
           enum:
             - PASSTHROUGH
             - RESTRICTED
             - DISCARD
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         acltype:
           title: acltype
           enum:
@@ -23839,12 +23805,9 @@ components:
             - NFS4ACL
             - POSIX
             - POSIXACL
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         share_type:
           title: share_type
           default: GENERIC
@@ -23858,12 +23821,9 @@ components:
           enum:
             - ON
             - SA
+            - INHERIT
           nullable: false
-          anyOf:
-            - type: string
-            - type: string
-              enum:
-                - INHERIT
+          type: string
         encryption_options:
           type: object
           properties:
